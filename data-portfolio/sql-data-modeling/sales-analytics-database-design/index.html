@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Analytics Database Design | Valentina Nguyen</title>
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Hero Section with Side Navigation -->
+    <section class="hero-section case-study">
+        <!-- Left Navigation Column -->
+        <nav class="hero-nav">
+            <div class="nav-logo"><a href="/">Portfolio</a></div>
+            <ul class="nav-menu">
+                <li><a href="/#about">About</a></li>
+                <li><a href="/#data-portfolio">Data Portfolio</a></li>
+                <li><a href="/#marketing-portfolio">Marketing Portfolio</a></li>
+            </ul>
+            <div class="nav-footer">
+                <a href="../../../assets/pdfs/Resume_1.26.pdf" target="_blank">Download Resume</a>
+                <a href="/#contact">Contact Me</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <!-- Right Hero Content Column -->
+        <div class="hero case-study-hero">
+            <div class="hero-content">
+                <span class="case-study-date">March 2024</span>
+                <h1 class="case-study-title">Sales Analytics Database Design</h1>
+                <p class="case-study-subtitle">Designing a scalable relational database to track sales performance,
+                    inventory, and customer behavior across multiple business units.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Image -->
+    <section class="case-study-hero-image">
+        <img src="../../../assets/images/case-study-hero.jpg" alt="Sales Analytics Database Design">
+    </section>
+
+    <!-- Case Study Content -->
+    <article class="case-study-content">
+        <div class="section-container">
+            <!-- The Business Problem -->
+            <section class="case-study-section">
+                <h2>The Business Problem</h2>
+                <p>The organization had sales data scattered across multiple legacy systems with inconsistent data
+                    formats. The sales team spent 30% of their time manually consolidating reports instead of analyzing
+                    trends and making strategic decisions. Limited data visibility meant they couldn't quickly identify
+                    top-performing products, underperforming regions, or customer segments at risk of churn.</p>
+                <p>They needed a centralized, reliable database that could handle complex queries and provide real-time
+                    insights into sales performance.</p>
+            </section>
+
+            <!-- Findings Section -->
+            <section class="case-study-section">
+                <h2>Findings</h2>
+                <p>After analyzing the existing systems, I discovered:</p>
+                <ul style="margin-left: 2rem; color: #666;">
+                    <li>Data was siloed across 4 different systems with overlapping information</li>
+                    <li>No consistent customer IDs meant duplicate records and data inconsistency</li>
+                    <li>Historical data was scattered with no audit trail</li>
+                    <li>Query response times exceeded 30 minutes for simple reports</li>
+                </ul>
+            </section>
+
+            <!-- Results Section -->
+            <section class="case-study-section">
+                <h2>Results</h2>
+                <p>I designed and implemented a normalized relational database with the following outcomes:</p>
+                <ul style="margin-left: 2rem; color: #666;">
+                    <li><strong>60% time savings:</strong> Automated reporting reduced manual consolidation from 30% to
+                        12% of workflow</li>
+                    <li><strong>Real-time insights:</strong> Query response times improved from 30 minutes to <5
+                            seconds</li>
+                    <li><strong>Data accuracy:</strong> Eliminated duplicate records and established single source of
+                        truth</li>
+                    <li><strong>Scalability:</strong> Database handles 10x growth without performance degradation</li>
+                </ul>
+            </section>
+
+            <!-- Immediate Impact on Operations -->
+            <section class="case-study-section">
+                <h2>Immediate Impact on Operations</h2>
+                <p>The sales team immediately gained visibility into:</p>
+                <ul style="margin-left: 2rem; color: #666;">
+                    <li>Regional sales performance with daily automated reports</li>
+                    <li>Product profitability with margin analysis</li>
+                    <li>Customer lifetime value predictions</li>
+                    <li>Inventory movement patterns by territory</li>
+                </ul>
+                <p>Leaders could now make data-driven decisions in real-time, and the analytics team could focus on
+                    strategic analysis instead of data wrangling.</p>
+            </section>
+
+            <!-- Pull Quote -->
+            <section class="case-study-quote">
+                <blockquote>
+                    <p>"Valentina transformed our data infrastructure. What took us days to gather now takes minutes,
+                        and we trust the data. She understood our business needs and delivered a solution that scales
+                        with us."</p>
+                    <footer>
+                        <span class="quote-author">Regional Sales Director</span>
+                        <span class="quote-role">Fortune 500 Manufacturing Company</span>
+                    </footer>
+                </blockquote>
+            </section>
+
+            <!-- Navigation Links -->
+            <div class="case-study-nav">
+                <a href="../" class="btn btn-secondary">← Back to SQL & Data Modeling</a>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <p class="footer-logo">ctRedo</p>
+                </div>
+                <div class="footer-section">
+                    <a href="../../../assets/pdfs/Resume_1.26.pdf" target="_blank">Download Resume</a>
+                    <a href="/#contact">Contact Me</a>
+                    <a href="/">Back to Home</a>
+                </div>
+                <div class="footer-section">
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#legal" class="footer-link">Legal</a>
+                    <a href="#privacy" class="footer-link">Privacy</a>
+                    <a href="https://kaggle.com" target="_blank" aria-label="Kaggle">
+                        <i class="fab fa-kaggle"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="footer-copyright">&copy; 2026 Valentina Nguyen. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../../script.js"></script>
+</body>
+
+</html>

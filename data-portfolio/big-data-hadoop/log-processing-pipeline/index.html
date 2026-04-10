@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log Processing Pipeline | Valentina Nguyen - Data Analyst</title>
+    <link rel="stylesheet" href="../../../../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <section class="hero-section category-page">
+        <nav class="hero-nav">
+            <div class="nav-logo">
+                <a href="../../../../index.html"><i class="fas fa-arrow-left"></i> ctRedo</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../../../../index.html">Home</a></li>
+                <li><a href="../../../../index.html#portfolio">Portfolio</a></li>
+                <li><a href="../../../../index.html#about">About</a></li>
+                <li><a href="../../../../index.html#recommendations">Recommendations</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-footer">
+                <a href="https://linkedin.com" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+        </nav>
+        <div class="hero">
+            <span class="case-study-date">October 2023</span>
+            <h1 class="case-study-title">Log Processing Pipeline</h1>
+            <p class="case-study-subtitle">Built Hadoop-based log processing system handling 500GB daily from 1000+
+                servers</p>
+        </div>
+    </section>
+
+    <section class="case-study-hero-image">
+        <img src="../../../../assets/images/placeholder.png" alt="Log Processing Pipeline">
+    </section>
+
+    <section class="case-study-content">
+        <article class="case-study-main">
+            <section class="case-study-section">
+                <h2>The Business Problem</h2>
+                <p>The infrastructure organization accumulated 500GB of log data daily from 1000+ servers and
+                    applications but couldn't analyze it effectively. Legacy log aggregation systems were overwhelmed,
+                    creating bottlenecks in application performance troubleshooting and security incident investigation.
+                </p>
+                <p>Operations needed scalable log processing to enable quick issue diagnosis across the entire
+                    infrastructure footprint.</p>
+            </section>
+
+            <section class="case-study-section">
+                <h2>Findings</h2>
+                <p>Infrastructure audit revealed:</p>
+                <ul>
+                    <li>Traditional centralized log aggregation couldn't scale to log volume</li>
+                    <li>Log data retention limited to 3 days due to storage constraints</li>
+                    <li>No ability to perform large-scale queries across multi-TB log datasets</li>
+                    <li>Mean time to incident diagnosis was 2+ hours</li>
+                </ul>
+            </section>
+
+            <section class="case-study-section">
+                <h2>Results</h2>
+                <ul>
+                    <li>Deployed Hadoop cluster processing 500GB+ daily log ingestion</li>
+                    <li>Extended log retention to 90 days enabling historical analysis</li>
+                    <li>Implemented log ETL pipeline extracting structured fields for analysis</li>
+                    <li>Enabled ad-hoc queries across TB-scale log data in <10 seconds</li>
+                    <li>Created log aggregation and analytics dashboard for operations team</li>
+                    <li>Reduced incident diagnosis time from 2+ hours to 15 minutes</li>
+                </ul>
+            </section>
+
+            <section class="case-study-section">
+                <h2>Immediate Impact on Operations</h2>
+                <p>Operations team can now troubleshoot issues significantly faster using queryable log data. Security
+                    team can perform historical threat hunting across 90 days of logs. System reliability improved with
+                    faster incident resolution.</p>
+            </section>
+
+            <section class="case-study-quote">
+                <blockquote>
+                    <p>"The log processing pipeline is foundational to our operations now. We can diagnose issues so
+                        much faster, and our security team can investigate suspicious activity across weeks of data. The
+                        investment pays for itself in operational efficiency."</p>
+                    <footer>
+                        <span class="quote-author">VP of Infrastructure</span>
+                        <span class="quote-role">Cloud Services Company</span>
+                    </footer>
+                </blockquote>
+            </section>
+
+            <div class="case-study-nav">
+                <a href="../" class="btn btn-secondary">← Back to Big Data & Hadoop</a>
+            </div>
+        </article>
+    </section>
+
+    <script src="../../../../script.js"></script>
+</body>
+
+</html>

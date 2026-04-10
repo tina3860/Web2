@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distributed Analytics Platform | Valentina Nguyen - Data Analyst</title>
+    <link rel="stylesheet" href="../../../../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <section class="hero-section category-page">
+        <nav class="hero-nav">
+            <div class="nav-logo">
+                <a href="../../../../index.html"><i class="fas fa-arrow-left"></i> ctRedo</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../../../../index.html">Home</a></li>
+                <li><a href="../../../../index.html#portfolio">Portfolio</a></li>
+                <li><a href="../../../../index.html#about">About</a></li>
+                <li><a href="../../../../index.html#recommendations">Recommendations</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-footer">
+                <a href="https://linkedin.com" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+        </nav>
+        <div class="hero">
+            <span class="case-study-date">December 2023</span>
+            <h1 class="case-study-title">Distributed Analytics Platform</h1>
+            <p class="case-study-subtitle">Built Spark-based analytics platform enabling near-real-time analysis of
+                50TB+ datasets</p>
+        </div>
+    </section>
+
+    <section class="case-study-hero-image">
+        <img src="../../../../assets/images/placeholder.png" alt="Distributed Analytics Platform">
+    </section>
+
+    <section class="case-study-content">
+        <article class="case-study-main">
+            <section class="case-study-section">
+                <h2>The Business Problem</h2>
+                <p>The organization needed to analyze growing datasets (50TB+) containing years of transaction history,
+                    but query times exceeded 8 hours on even simple aggregations. Analysts couldn't iterate on analysis
+                    in real-time, limiting exploratory work and ad-hoc reporting capabilities.</p>
+                <p>The business needed distributed computing to enable interactive analytics on massive datasets.</p>
+            </section>
+
+            <section class="case-study-section">
+                <h2>Findings</h2>
+                <p>Architecture assessment revealed:</p>
+                <ul>
+                    <li>Traditional single-server database couldn't scale to dataset size</li>
+                    <li>Query optimization had reached its limits</li>
+                    <li>No distributed processing infrastructure available</li>
+                    <li>Need for both batch and interactive analytics on same data</li>
+                </ul>
+            </section>
+
+            <section class="case-study-section">
+                <h2>Results</h2>
+                <ul>
+                    <li>Deployed Apache Spark cluster with 32 nodes processing 50TB+ datasets</li>
+                    <li>Reduced query times from 8+ hours to 5-15 minutes depending on complexity</li>
+                    <li>Enabled interactive analytics for exploratory data analysis</li>
+                    <li>Created data lake architecture storing raw and processed data</li>
+                    <li>Implemented Spark SQL for SQL-based analytics on distributed data</li>
+                    <li>Achieved 160x performance improvement on large analytical queries</li>
+                </ul>
+            </section>
+
+            <section class="case-study-section">
+                <h2>Immediate Impact on Operations</h2>
+                <p>Analysts can now iterate on analyses in real-time instead of waiting overnight for results. Ad-hoc
+                    reporting became feasible for large datasets. The organization can now support interactive analytics
+                    use cases previously impossible.</p>
+            </section>
+
+            <section class="case-study-quote">
+                <blockquote>
+                    <p>"The Spark platform transformed our analytics capability. Queries that used to take 8 hours now
+                        run in 10 minutes. Our analysts are exponentially more productive and can explore data
+                        interactively."</p>
+                    <footer>
+                        <span class="quote-author">Chief Data Officer</span>
+                        <span class="quote-role">Enterprise Analytics Company</span>
+                    </footer>
+                </blockquote>
+            </section>
+
+            <div class="case-study-nav">
+                <a href="../" class="btn btn-secondary">← Back to Big Data & Hadoop</a>
+            </div>
+        </article>
+    </section>
+
+    <script src="../../../../script.js"></script>
+</body>
+
+</html>
