@@ -327,13 +327,6 @@ img {
   line-height: 1.8;
   color: rgba(255, 255, 255, 0.75);
   text-shadow: none;
-  min-height: 2.4em;
-  overflow: hidden;
-  border-right: 3px solid rgba(255, 255, 255, 0.75);
-  white-space: nowrap;
-  animation:
-    typewriter 5s steps(75, end) infinite,
-    blink 0.75s step-end infinite;
 }
 
 /* Tablet Hero */
@@ -359,7 +352,7 @@ img {
 }
 
 /* Typewriter Animation */
-@keyframes typewriter {
+@keyframes typing {
   0% {
     width: 0;
   }
@@ -371,7 +364,7 @@ img {
   }
 }
 
-@keyframes blink {
+@keyframes blink-caret {
   from,
   to {
     border-right-color: rgba(255, 255, 255, 0.75);
@@ -1006,13 +999,6 @@ img {
   line-height: 1.8;
   color: rgba(255, 255, 255, 0.85);
   max-width: 600px;
-  min-height: 2.4em;
-  overflow: hidden;
-  border-right: 3px solid rgba(255, 255, 255, 0.85);
-  white-space: nowrap;
-  animation:
-    typewriter 5s steps(75, end) infinite,
-    blink 0.75s step-end infinite;
 }
 
 .category-projects {

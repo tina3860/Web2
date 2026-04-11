@@ -70,3 +70,55 @@ document
     el.style.transition = "opacity 0.6s ease, transform 0.6s ease";
     observer.observe(el);
   });
+
+document.addEventListener("DOMContentLoaded", () => {
+  function typeLine(el, text, speed, callback) {
+    el.textContent = "";
+    const cursor = document.createElement("span");
+    cursor.style.cssText =
+      "border-right: 2px solid rgba(255,255,255,0.75); margin-left: 2px; animation: blink-caret 0.7s step-end infinite;";
+    el.appendChild(cursor);
+    let i = 0;
+    const timer = setInterval(() => {
+      el.insertBefore(document.createTextNode(text.charAt(i)), cursor);
+      i++;
+      if (i >= text.length) {
+        clearInterval(timer);
+        setTimeout(() => {
+          cursor.remove();
+          if (callback) callback();
+        }, 1000);
+      }
+    }, speed);
+  }
+
+  // Homepage - types two lines then loops
+  const line1 = document.querySelector(".type-line-1");
+  const line2 = document.querySelector(".type-line-2");
+
+  function loopHero() {
+    if (line1 && line2) {
+      line1.textContent = "";
+      line2.textContent = "";
+      typeLine(line1, "Collect, process, analyze and present data.", 40, () => {
+        typeLine(line2, "Supporting everyday business decisions.", 40, () => {
+          setTimeout(loopHero, 1500);
+        });
+      });
+    }
+  }
+  loopHero();
+
+  // Category pages - types then loops
+  const catDesc = document.querySelector(".category-description");
+  if (catDesc) {
+    const text = catDesc.textContent.trim();
+    catDesc.textContent = "";
+    function loopCategory() {
+      typeLine(catDesc, text, 40, () => {
+        setTimeout(loopCategory, 1500);
+      });
+    }
+    loopCategory();
+  }
+});
