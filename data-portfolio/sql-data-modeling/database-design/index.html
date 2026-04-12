@@ -36,7 +36,7 @@
                 <span class="case-study-date" style="color: #fff;">August 2023</span>
                 <h1 class="case-study-title">Product Inventory Database</h1>
                 <p class="case-study-subtitle">
-                    <span class="typewriter-text" data-text="Designed a centralized SQL inventory database."></span>
+                    <span class="typewriter-text" data-text="Designing a centralized SQL inventory database for a vacuum truck parts manufacturer, replacing three disconnected systems with a clean relational schema."></span>
                 </p>
                 <div class="case-study-resources">
                     <div class="resource-cards">
@@ -63,40 +63,23 @@
         <article class="case-study-main">
             <section class="case-study-section">
                 <h2>The Business Problem</h2>
-                <p>Sales data was siloed across multiple systems, making it difficult to generate unified reports and
-                    analyze performance trends. Manual data consolidation led to errors and delayed insights for sales
-                    leadership.</p>
-                <p>The company needed a robust, centralized database to enable real-time analytics and support
-                    self-service reporting for business users.</p>
+                <p>Environmental Company, a manufacturer and reseller of vacuum truck parts serving municipalities, OEMs, resellers, and contractors, was operating across three poorly integrated systems — Shopify for e-commerce, Sage for accounting, and HubSpot for CRM. The lack of integration caused inconsistent product records, inaccurate inventory counts, and no way to monitor when items needed to be restocked. Rather than attempting to fix the existing systems, the decision was made to design a clean database from scratch.</p>
             </section>
 
             <section class="case-study-section">
                 <h2>Findings</h2>
                 <p>Key findings included:</p>
-                <ul>
-                    <li>Data sources lacked consistent keys, requiring a master data management approach</li>
-                    <li>Existing schema did not support multi-dimensional analysis (e.g., by region, product, rep)</li>
-                    <li>Performance bottlenecks in current reporting due to inefficient queries and lack of indexing
-                    </li>
-                </ul>
+                <p>The existing systems created data mismatches across departments including purchasing, warehouse, sales, and leadership. Key operational questions could not be answered without manually pulling from multiple sources. After designing a relational schema built around five core entities — Product, Supplier, Category, Inventory, and Sales — SQL queries were written to answer real business reporting questions including identifying products sold after a specific date, ranking products by revenue, flagging items below reorder thresholds, and calculating revenue filtered by category and supplier location.</p>
             </section>
 
             <section class="case-study-section">
-                <h2>Solution</h2>
-                <p>I designed a star schema sales analytics database, integrating data from CRM, ERP, and e-commerce
-                    platforms. The new model included dimension tables for products, customers, sales reps, and time,
-                    enabling flexible slicing and dicing of sales metrics.</p>
-                <ul>
-                    <li>Implemented ETL pipelines to automate data ingestion and transformation</li>
-                    <li>Added indexes and partitioning to optimize query performance</li>
-                    <li>Developed documentation and data dictionary for business users</li>
-                </ul>
+                <h2>Results</h2>
+                <p>The new database consolidated all three systems into a single unified structure with real-time inventory visibility, automated reorder flagging, and clear supplier management. Operational reporting that previously required manual effort across multiple platforms could now be answered with a single SQL query. Two primary outcomes were achieved — streamlined operations across all departments and real-time inventory visibility for warehouse and purchasing teams.</p>
             </section>
 
             <section class="case-study-section">
                 <h2>Impact</h2>
-                <p>The new database reduced reporting time from hours to seconds, empowered business users with
-                    self-service analytics, and improved data quality and trust in sales metrics.</p>
+                <p>Environmental Company gained a scalable, clean database foundation that eliminated data mismatches, reduced operational inefficiencies, and improved customer service through better data accuracy and accessibility across all departments.</p>
             </section>
         </article>
     </section>

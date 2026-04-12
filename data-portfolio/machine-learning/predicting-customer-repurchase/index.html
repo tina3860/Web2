@@ -33,10 +33,11 @@
         <div class="hero case-study-hero"
             style="--case-study-image: url('../../../../assets/images/case-study-2.png');">
             <div class="hero-content">
-                <span class="case-study-date" style="color: #fff;">October 2023</span>
+                <span class="case-study-date" style="color: #fff;">2025</span>
                 <h1 class="case-study-title">Predicting Customer Repurchase</h1>
                 <p class="case-study-subtitle">
-                    <span class="typewriter-text" data-text="Developed a predictive model to forecast customer repurchase behavior."></span>
+                    <span class="typewriter-text"
+                        data-text="Using machine learning to predict repeat purchases and identify high-value customer segments for a vacuum truck parts manufacturer."></span>
                 </p>
                 <div class="case-study-resources">
                     <div class="resource-cards">
@@ -63,40 +64,38 @@
         <article class="case-study-main">
             <section class="case-study-section">
                 <h2>The Business Problem</h2>
-                <p>Sales data was siloed across multiple systems, making it difficult to generate unified reports and
-                    analyze performance trends. Manual data consolidation led to errors and delayed insights for sales
-                    leadership.</p>
-                <p>The company needed a robust, centralized database to enable real-time analytics and support
-                    self-service reporting for business users.</p>
+                <p>Environmental Company, a manufacturer and reseller of vacuum truck parts, lacked outbound sales
+                    efforts and had no way to anticipate customer needs or encourage repeat purchases. Without a
+                    data-driven approach, the company had limited visibility into when customers were likely to reorder
+                    and which customers were most valuable to prioritize.</p>
+
             </section>
 
             <section class="case-study-section">
                 <h2>Findings</h2>
                 <p>Key findings included:</p>
-                <ul>
-                    <li>Data sources lacked consistent keys, requiring a master data management approach</li>
-                    <li>Existing schema did not support multi-dimensional analysis (e.g., by region, product, rep)</li>
-                    <li>Performance bottlenecks in current reporting due to inefficient queries and lack of indexing
-                    </li>
-                </ul>
+                <p>Analysis of 2024 transaction data across customer, product, and time-based dimensions revealed
+                    distinct purchasing behaviors and patterns. K-Means Clustering identified three customer segments
+                    with different spend and frequency profiles. A Random Forest classifier achieved an AUC above 95% in
+                    predicting 30-day reorders. Association rule mining uncovered complementary product bundles
+                    frequently purchased together. The Cox Proportional Hazards model identified a critical repurchase
+                    window within 50 days of a customer's last order.</p>
             </section>
 
             <section class="case-study-section">
-                <h2>Solution</h2>
-                <p>I designed a star schema sales analytics database, integrating data from CRM, ERP, and e-commerce
-                    platforms. The new model included dimension tables for products, customers, sales reps, and time,
-                    enabling flexible slicing and dicing of sales metrics.</p>
-                <ul>
-                    <li>Implemented ETL pipelines to automate data ingestion and transformation</li>
-                    <li>Added indexes and partitioning to optimize query performance</li>
-                    <li>Developed documentation and data dictionary for business users</li>
-                </ul>
+                <h2>Results</h2>
+                <p>The combined models provided a framework for segmentation-driven marketing, inventory optimization,
+                    and early lifecycle outreach. High-value customers could be identified and targeted before the
+                    50-day repurchase window closed, increasing the likelihood of retention. Product bundle insights
+                    informed cross-sell opportunities, and the reorder predictions gave the sales team a prioritized
+                    list of accounts to contact proactively.</p>
             </section>
 
             <section class="case-study-section">
                 <h2>Impact</h2>
-                <p>The new database reduced reporting time from hours to seconds, empowered business users with
-                    self-service analytics, and improved data quality and trust in sales metrics.</p>
+                <p>Environmental Company gained a data-driven foundation for launching outbound sales efforts for the
+                    first time, with clear customer segments, predicted reorder timelines, and product pairing
+                    recommendations to guide strategy.</p>
             </section>
         </article>
     </section>
