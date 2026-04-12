@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predicting Customer Repurchase | Valentina Nguyen - Data Analyst</title>
+    <link rel="stylesheet" href="../../../../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <section class="hero-section category-page">
+        <nav class="hero-nav">
+            <div class="nav-logo">
+                <a href="../index.html"><i class="fas fa-arrow-left"></i> Back</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../../../../index.html#data-portfolio">Data Portfolio</a></li>
+                <li><a href="../../../../index.html#marketing-portfolio">Marketing Portfolio</a></li>
+
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-footer">
+                <a href="https://linkedin.com" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+        </nav>
+        <div class="hero case-study-hero"
+            style="--case-study-image: url('../../../../assets/images/case-study-2.png');">
+            <div class="hero-content">
+                <span class="case-study-date" style="color: #fff;">October 2023</span>
+                <h1 class="case-study-title">Predicting Customer Repurchase</h1>
+                <p class="case-study-subtitle">
+                    <span class="typewriter-text" data-text="Developed a predictive model to forecast customer repurchase behavior."></span>
+                </p>
+                <div class="case-study-resources">
+                    <div class="resource-cards">
+                        <a href="../../../../assets/code/Predicting_Customer_Reorders_Data_Driven_Sales_Optimization_EPA_SALES.ipynb"
+                            class="resource-card" target="_blank">
+                            <img src="../../../../assets/images/code-icon.png" alt="View Code" class="resource-img">
+                            <span class="resource-label">View Code</span>
+                        </a>
+                        <a href="../../../../assets/pdfs/Predicting Customer Reorders_ Data-Driven Sales Optimization Environmental Company .pdf"
+                            class="resource-card" target="_blank">
+                            <img src="../../../../assets/images/documentation icon.png" alt="View Documentation"
+                                class="resource-img">
+                            <span class="resource-label">View Documentation</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="case-study-content">
+        <article class="case-study-main">
+            <section class="case-study-section">
+                <h2>The Business Problem</h2>
+                <p>Sales data was siloed across multiple systems, making it difficult to generate unified reports and
+                    analyze performance trends. Manual data consolidation led to errors and delayed insights for sales
+                    leadership.</p>
+                <p>The company needed a robust, centralized database to enable real-time analytics and support
+                    self-service reporting for business users.</p>
+            </section>
+
+            <section class="case-study-section">
+                <h2>Findings</h2>
+                <p>Key findings included:</p>
+                <ul>
+                    <li>Data sources lacked consistent keys, requiring a master data management approach</li>
+                    <li>Existing schema did not support multi-dimensional analysis (e.g., by region, product, rep)</li>
+                    <li>Performance bottlenecks in current reporting due to inefficient queries and lack of indexing
+                    </li>
+                </ul>
+            </section>
+
+            <section class="case-study-section">
+                <h2>Solution</h2>
+                <p>I designed a star schema sales analytics database, integrating data from CRM, ERP, and e-commerce
+                    platforms. The new model included dimension tables for products, customers, sales reps, and time,
+                    enabling flexible slicing and dicing of sales metrics.</p>
+                <ul>
+                    <li>Implemented ETL pipelines to automate data ingestion and transformation</li>
+                    <li>Added indexes and partitioning to optimize query performance</li>
+                    <li>Developed documentation and data dictionary for business users</li>
+                </ul>
+            </section>
+
+            <section class="case-study-section">
+                <h2>Impact</h2>
+                <p>The new database reduced reporting time from hours to seconds, empowered business users with
+                    self-service analytics, and improved data quality and trust in sales metrics.</p>
+            </section>
+        </article>
+    </section>
+
+    <script src="../../../../script.js"></script>
+</body>
+
+</html>
