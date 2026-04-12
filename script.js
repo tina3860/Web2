@@ -74,9 +74,13 @@ document
 document.addEventListener("DOMContentLoaded", () => {
   function typeLine(el, text, speed, callback) {
     el.textContent = "";
+    // Use a variable for the cursor color, fallback to white if not set
+    const cursorColor =
+      getComputedStyle(document.documentElement).getPropertyValue(
+        "--typewriter-cursor-color",
+      ) || "rgba(255,255,255,0.75)";
     const cursor = document.createElement("span");
-    cursor.style.cssText =
-      "border-right: 2px solid rgba(255,255,255,0.75); margin-left: 2px; animation: blink-caret 0.7s step-end infinite;";
+    cursor.style.cssText = `border-right: 2px solid ${cursorColor}; margin-left: 2px; animation: blink-caret 0.7s step-end infinite;`;
     el.appendChild(cursor);
     let i = 0;
     const timer = setInterval(() => {
@@ -120,5 +124,20 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
     loopCategory();
+  }
+
+  // Case study pages - types subtitle then loops (span only)
+  const caseSubtitleSpan = document.querySelector(
+    ".case-study-subtitle .typewriter-text",
+  );
+  if (caseSubtitleSpan) {
+    const text = caseSubtitleSpan.getAttribute("data-text");
+    caseSubtitleSpan.textContent = "";
+    function loopCaseStudy() {
+      typeLine(caseSubtitleSpan, text, 40, () => {
+        setTimeout(loopCaseStudy, 1500);
+      });
+    }
+    loopCaseStudy();
   }
 });
