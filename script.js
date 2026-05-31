@@ -5,8 +5,18 @@ const navFooter = document.querySelector(".nav-footer");
 
 if (hamburger) {
   hamburger.addEventListener("click", () => {
+    const heroNav = hamburger.closest(".hero-nav");
     navMenu.classList.toggle("active");
     navFooter.classList.toggle("active");
+
+    if (heroNav && navMenu.classList.contains("active")) {
+      heroNav.style.setProperty(
+        "--mobile-menu-height",
+        `${navMenu.scrollHeight}px`,
+      );
+    } else if (heroNav) {
+      heroNav.style.removeProperty("--mobile-menu-height");
+    }
 
     // Animate hamburger
     const spans = hamburger.querySelectorAll("span");
@@ -23,8 +33,12 @@ if (hamburger) {
   const navLinks = document.querySelectorAll(".nav-menu a, .nav-footer a");
   navLinks.forEach((link) => {
     link.addEventListener("click", () => {
+      const heroNav = hamburger.closest(".hero-nav");
       navMenu.classList.remove("active");
       navFooter.classList.remove("active");
+      if (heroNav) {
+        heroNav.style.removeProperty("--mobile-menu-height");
+      }
       hamburger.querySelectorAll("span").forEach((span) => {
         span.style.transform = "none";
         span.style.opacity = "1";

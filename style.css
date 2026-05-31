@@ -186,22 +186,37 @@ img {
 }
 
 /* Mobile - Horizontal Navigation */
-@media (max-width: 374px) {
+@media (max-width: 799px) {
   .hero-section {
+    display: block;
     grid-template-columns: 1fr;
+  }
+
+  .case-study-hero {
+    padding: var(--spacing-xl) var(--spacing-sm);
+    background-position: 35% center;
+  }
+
+  .case-study-hero .hero-content {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 var(--spacing-sm);
   }
 
   .hero-nav {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     height: auto;
     padding: var(--spacing-md);
     gap: var(--spacing-lg);
     border-right: none;
     border-bottom: 1px solid var(--color-light-bg);
     position: relative;
+    z-index: 20;
     justify-content: space-between;
     align-items: center;
+    overflow: visible;
   }
 
   .nav-logo {
@@ -218,6 +233,9 @@ img {
     background-color: var(--color-white);
     border-bottom: 1px solid var(--color-light-bg);
     padding: var(--spacing-md);
+    width: 100%;
+    margin-top: 0;
+    box-shadow: 0 4px 12px var(--color-shadow);
   }
 
   .nav-menu.active {
@@ -231,12 +249,15 @@ img {
   .nav-footer.active {
     display: flex;
     position: absolute;
-    top: 100%;
+    top: calc(100% + var(--mobile-menu-height, 0px));
     left: 0;
     right: 0;
     background-color: var(--color-white);
     flex-direction: column;
     padding: var(--spacing-md);
+    width: 100%;
+    margin-top: 0;
+    box-shadow: 0 6px 16px var(--color-shadow);
   }
 
   .hamburger {
@@ -245,7 +266,7 @@ img {
 }
 
 /* Tablet and Desktop - Side Navigation */
-@media (min-width: 375px) {
+@media (min-width: 800px) {
   .hero-section {
     grid-template-columns: 300px 1fr;
   }
@@ -1049,6 +1070,7 @@ img {
   transition: var(--transition);
   width: 120px;
 }
+.resource-img {
   width: 48px;
   height: 48px;
   object-fit: contain;
@@ -1060,11 +1082,6 @@ img {
   font-weight: 600;
   color: white;
   text-align: center;
-}
-  padding: var(--spacing-lg);
-  border-radius: 8px;
-  background-color: var(--color-light-bg);
-  transition: var(--transition);
 }
 
 .project-list-item:hover {
