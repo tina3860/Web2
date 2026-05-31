@@ -1045,7 +1045,7 @@ img {
   box-shadow: 0 2px 8px var(--color-shadow);
   padding: 1rem 1.5rem;
   text-decoration: none;
-  color: var(--color-text);
+  color: white;
   transition: var(--transition);
   width: 120px;
 }

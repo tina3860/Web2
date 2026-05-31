@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sales Analytics Database Design | Valentina Nguyen - Data Analyst</title>
+    <title>QuickStudy Laminate | Valentina Nguyen - Data Analyst</title>
     <link rel="stylesheet" href="../../../../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -33,23 +33,17 @@
             style="--case-study-image: url('../../../../assets/images/case-study-1.png');">
             <div class="hero-content">
                 <span class="case-study-date" style="color: #fff;">August 2023</span>
-                <h1 class="case-study-title">Product Inventory Database</h1>
+                <h1 class="case-study-title">QuickStudy Laminate</h1>
                 <p class="case-study-subtitle">
                     <span class="typewriter-text"
-                        data-text="Designing a centralized SQL inventory database for a vacuum truck parts manufacturer, replacing three disconnected systems with a clean relational schema."></span>
+                        data-text="Built a 4-page laminate reference guide consolidating 19 ML algorithms. Each with real use cases, full Python syntax, and formulas from 8 weeks of grad school notebooks."></span>
                 </p>
                 <div class="case-study-resources">
                     <div class="resource-cards">
-                        <a href="../../../../assets/code/assets/code/Environmental Company SQL.sql"
-                            class="resource-card" target="_blank">
+                        <a href="https://machinelearningreferenceguide.my.canva.site/" class="resource-card"
+                            target="_blank">
                             <img src="../../../../assets/images/code-icon.png" alt="View Code" class="resource-img">
-                            <span class="resource-label">View Code</span>
-                        </a>
-                        <a href="../../../../assets/pdfs/Environmental Company Product Inventory Database Documentation.pdf"
-                            class="resource-card" target="_blank">
-                            <img src="../../../../assets/images/documentation icon.png" alt="View Documentation"
-                                class="resource-img">
-                            <span class="resource-label">View Documentation</span>
+                            <span class="resource-label">View Visual</span>
                         </a>
                     </div>
                 </div>
@@ -62,41 +56,33 @@
     <section class="case-study-content">
         <article class="case-study-main">
             <section class="case-study-section">
-                <h2>The Business Problem</h2>
-                <p>Environmental Company, a manufacturer and reseller of vacuum truck parts serving municipalities,
-                    OEMs, resellers, and contractors, was operating across three poorly integrated systems — Shopify for
-                    e-commerce, Sage for accounting, and HubSpot for CRM. The lack of integration caused inconsistent
-                    product records, inaccurate inventory counts, and no way to monitor when items needed to be
-                    restocked. Rather than attempting to fix the existing systems, the decision was made to design a
-                    clean database from scratch.</p>
+                <h2>Problem</h2>
+                <p>As part of my grad program, I've been working through everything from Association Rules and Decision
+                    Trees to Neural Networks and Sentiment Analysis and I realized my notes were scattered across 8+
+                    Jupyter notebooks, lecture slides, and scribbled margins.</p>
             </section>
 
             <section class="case-study-section">
-                <h2>Findings</h2>
-                <p>Key findings included:</p>
-                <p>The existing systems created data mismatches across departments including purchasing, warehouse,
-                    sales, and leadership. Key operational questions could not be answered without manually pulling from
-                    multiple sources. After designing a relational schema built around five core entities — Product,
-                    Supplier, Category, Inventory, and Sales — SQL queries were written to answer real business
-                    reporting questions including identifying products sold after a specific date, ranking products by
-                    revenue, flagging items below reorder thresholds, and calculating revenue filtered by category and
-                    supplier location.</p>
-            </section>
-
-            <section class="case-study-section">
-                <h2>Results</h2>
-                <p>The new database consolidated all three systems into a single unified structure with real-time
-                    inventory visibility, automated reorder flagging, and clear supplier management. Operational
-                    reporting that previously required manual effort across multiple platforms could now be answered
-                    with a single SQL query. Two primary outcomes were achieved — streamlined operations across all
-                    departments and real-time inventory visibility for warehouse and purchasing teams.</p>
+                <h2>Solution</h2>
+                <p>So I built a 4-page QuickStudy laminate reference guide that consolidates everything:</p>
+                <p>
+                    A Master Model Index that includes 19 algorithms, each with a use case, output type, and "when to
+                    use" decision
+                    rule. </br>
+                    Full Python syntax for every model (sklearn, Keras, NLTK, VADER, TextBlob). </br>
+                    Real examples pulled directly from class notebooks. </br>
+                    Formulas with plain-English explanations (Entropy, Bayes' Theorem, Ridge vs. Lasso, VIF) </br>
+                    A quick decision flowchart: labeled data? → type of target? → right algorithm.</p>
             </section>
 
             <section class="case-study-section">
                 <h2>Impact</h2>
-                <p>Environmental Company gained a scalable, clean database foundation that eliminated data mismatches,
-                    reduced operational inefficiencies, and improved customer service through better data accuracy and
-                    accessibility across all departments.</p>
+                <p>Building this forced me to actually understand the connections between concepts — not just run the
+                    code.</p>
+                <p>
+                    If you're in an applied ML program or transitioning into data analytics, I can't recommend this kind
+                    of synthesis exercise enough. You learn more building the cheat sheet than using it.
+                </p>
             </section>
         </article>
     </section>
